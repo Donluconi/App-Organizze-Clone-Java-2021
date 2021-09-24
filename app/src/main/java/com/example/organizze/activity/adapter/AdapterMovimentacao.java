@@ -1,0 +1,78 @@
+package com.example.organizze.activity.adapter;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.organizze.R;
+import com.example.organizze.activity.model.Movimentacao;
+
+import java.util.List;
+
+/**
+ * Created by Jamilton Damasceno
+ */
+
+public class AdapterMovimentacao extends RecyclerView.Adapter<AdapterMovimentacao.MyViewHolder> {
+
+    List<Movimentacao> movimentacoes;
+    Context context;
+
+    //nosso construtor que recebe um List de movimentacao, segundo parametro context
+    //depois configuramos os valores que recebemos no adapter.
+    public AdapterMovimentacao(List<Movimentacao> movimentacoes, Context context) {
+        this.movimentacoes = movimentacoes;
+        this.context = context;
+    }
+
+    //basicamente irá inflar nosso layout.
+    @Override
+    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View itemLista = LayoutInflater.from(parent.getContext()).inflate(R.layout.adapter_movimentacao, parent, false);
+        return new MyViewHolder(itemLista);
+    }
+
+
+    //cria a movimentação
+    @Override
+    public void onBindViewHolder(MyViewHolder holder, int position) {
+        Movimentacao movimentacao = movimentacoes.get(position);
+
+        holder.titulo.setText(movimentacao.getDescricao());
+        holder.valor.setText(String.valueOf(movimentacao.getValor()));
+        holder.categoria.setText(movimentacao.getCategoria());
+        holder.valor.setTextColor(context.getResources().getColor(R.color.colorAccentReceita));
+
+        //verificação da despesa, realiza a alteração de cor e simbolo.
+        if (movimentacao.getTipo().equals("d")) { //
+            holder.valor.setTextColor(context.getResources().getColor(R.color.colorAccentDespesa));
+            holder.valor.setText("-" + movimentacao.getValor()); //em caso de números negativos terá o simbolo negativo
+        }
+    }
+
+
+    //vamos descobrir a quantidade de itens que nós temos em movimentações
+    @Override
+    public int getItemCount() {
+        return movimentacoes.size();
+    }
+
+    public class MyViewHolder extends RecyclerView.ViewHolder {
+
+        TextView titulo, valor, categoria;
+
+        public MyViewHolder(View itemView) {
+            super(itemView);
+
+            titulo = itemView.findViewById(R.id.textAdapterTitulo);
+            valor = itemView.findViewById(R.id.textAdapterValor);
+            categoria = itemView.findViewById(R.id.textAdapterCategoria);
+        }
+
+    }
+
+}

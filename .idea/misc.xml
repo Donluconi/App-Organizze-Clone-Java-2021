@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Luconi/AndroidStudioProjects/Organizze/app/src/main/res/drawable/ic_cadeado_cinza.xml" value="0.12037037037037036" />
+        <entry key="..\:/Users/Luconi/AndroidStudioProjects/Organizze/app/src/main/res/drawable/ic_email_cinza_24.xml" value="0.12037037037037036" />
+        <entry key="..\:/Users/Luconi/AndroidStudioProjects/Organizze/app/src/main/res/drawable/ic_pessoa_cinza_24.xml" value="0.1" />
+        <entry key="..\:/Users/Luconi/AndroidStudioProjects/Organizze/app/src/main/res/layout/activity_cadastro.xml" value="0.1" />
+        <entry key="..\:/Users/Luconi/AndroidStudioProjects/Organizze/app/src/main/res/layout/activity_despesas.xml" value="0.25" />
+        <entry key="..\:/Users/Luconi/AndroidStudioProjects/Organizze/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/Luconi/AndroidStudioProjects/Organizze/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Luconi/AndroidStudioProjects/Organizze/app/src/main/res/layout/activity_principal.xml" value="0.25" />
+        <entry key="..\:/Users/Luconi/AndroidStudioProjects/Organizze/app/src/main/res/layout/activity_receitas.xml" value="0.25" />
+        <entry key="..\:/Users/Luconi/AndroidStudioProjects/Organizze/app/src/main/res/layout/adapter_movimentacao.xml" value="0.33" />
+        <entry key="..\:/Users/Luconi/AndroidStudioProjects/Organizze/app/src/main/res/layout/content_principal.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Luconi/AndroidStudioProjects/Organizze/app/src/main/res/layout/fragment_first.xml" value="0.25" />
+        <entry key="..\:/Users/Luconi/AndroidStudioProjects/Organizze/app/src/main/res/layout/intro_1.xml" value="0.25" />
+        <entry key="..\:/Users/Luconi/AndroidStudioProjects/Organizze/app/src/main/res/layout/intro_2.xml" value="0.1" />
+        <entry key="..\:/Users/Luconi/AndroidStudioProjects/Organizze/app/src/main/res/layout/intro_3.xml" value="0.25" />
+        <entry key="..\:/Users/Luconi/AndroidStudioProjects/Organizze/app/src/main/res/layout/intro_4.xml" value="0.1" />
+        <entry key="..\:/Users/Luconi/AndroidStudioProjects/Organizze/app/src/main/res/layout/intro_5.xml" value="0.1" />
+        <entry key="..\:/Users/Luconi/AndroidStudioProjects/Organizze/app/src/main/res/layout/intro_cadastro.xml" value="0.25" />
+        <entry key="..\:/Users/Luconi/AndroidStudioProjects/Organizze/app/src/main/res/menu/menu_principal.xml" value="0.1925925925925926" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
